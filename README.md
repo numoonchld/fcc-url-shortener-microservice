@@ -1,2 +1,30 @@
-# fcc-url-shortener-microservice
-Glitch App for required project: https://learn.freecodecamp.org/apis-and-microservices/apis-and-microservices-projects/url-shortener-microservice
+# API Project: URL Shortener Microservice for freeCodeCamp
+
+### API query URL:
+
+https://fcc-url-shortner-microservice-nmc.glitch.me/api/shorturl/new
+
+#### Usage:
+
+[Test Exisitng Shortcut](https://fcc-url-shortner-microservice-nmc.glitch.me/api/shorturl/0)
+
+#### Will redirect to:
+
+http://www.freecodecamp.com
+
+### User Stories
+
+1. I can POST a URL to `[project_url]/api/shorturl/new` and I will receive a shortened URL in the JSON response. Example : `{"original_url":"www.google.com","short_url":1}`
+
+2. If I pass an invalid URL that doesn't follow the valid `http(s)://www.example.com(/more/routes)` format, the JSON response will contain an error like `{"error":"invalid URL"}`. 
+
+*HINT*: to be sure that the submitted url points to a valid site you can use the function `dns.lookup(host, cb)` from the `dns` core module.
+
+3. When I visit the shortened URL, it will redirect me to my original link.
+
+#### Creation Example:
+
+POST [project_url]/api/shorturl/newUrl
+
+> where newURL = https://www.google.com
+
